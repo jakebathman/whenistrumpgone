@@ -1,0 +1,196 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <meta property="og:url" content="https://whenistrumpgone.com" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="When Is Trump Gone?" />
+        <meta property="og:description" content="How much longer do we have?" />
+        <meta
+            property="og:image"
+            content="https://whenistrumpgone.com/img/redtrump.jpg"
+        />
+
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@DaysLeft4Trump" />
+        <meta name="twitter:creator" content="@JakeBathman" />
+
+        <title>When is Trump gone?</title>
+        <style>
+            body {
+                font-family: sans-serif;
+                margin: 0;
+            }
+
+            .top-box {
+                width: 100%;
+                max-width: 600px;
+                text-align: center;
+                font-size: 18px;
+            }
+
+            .the-clock__units {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .unit {
+                display: flex;
+                flex-direction: column;
+                padding: 15px 8px;
+                flex-basis: 25%;
+            }
+
+            .unit .value {
+                font-size: 76px;
+                font-weight: bold;
+            }
+
+            .unit .label {
+                font-size: 28px;
+            }
+
+            @media (max-width: 600px) {
+                .unit .value {
+                    font-size: 54px;
+                }
+                .unit .label {
+                    font-size: 22px;
+                }
+            }
+
+            .header-text {
+                margin-top: 5;
+                font-size: 20px;
+            }
+
+            .kitten {
+                text-align: center;
+            }
+
+            .footer {
+                text-align: center;
+                padding: 1em 0;
+                color: #444;
+            }
+
+            .content > div {
+                padding: 0.75em 0;
+            }
+
+            .emoji.cat {
+                font-size: 26px;
+            }
+
+            @media (prefers-color-scheme: dark) {
+                body {
+                    background: #121212;
+                    color: #f7f7f7;
+                }
+
+                .footer {
+                    color: #959595;
+                }
+
+                .footer a {
+                    color: teal;
+                }
+            }
+
+            .content {
+                display: flex;
+                flex-direction: column;
+                min-height: 98vh;
+                align-items: center;
+                justify-content: flex-start;
+            }
+            #gone,
+            #countdown {
+                display: none;
+            }
+
+            #gone h3 {
+                font-size: 100px;
+                line-height: 100%;
+                margin: 0;
+            }
+            @media (max-width: 600px) {
+                #gone h3 {
+                    font-size: 72px;
+                }
+            }
+
+            .the-clock {
+                transition: opacity 1s;
+            }
+            .dim {
+                filter: opacity(0.6);
+                transition: opacity 1s;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="content">
+            <div>
+                <div id="gone" style="text-align: center" class="header-text">
+                    <h3>Trump is gone.</h3>
+                </div>
+            </div>
+            <div>
+                <div
+                    id="countdown"
+                    style="text-align: center"
+                    class="header-text"
+                >
+                    <h3>Donald Trump leaves office in</h3>
+                </div>
+                <div style="text-align: center" class="the-clock">
+                    <div class="the-clock__units">
+                        <div id="y" class="unit">
+                            <span class="value"></span>
+                            <div class="label">Years</div>
+                        </div>
+                        <div id="n" class="unit">
+                            <span class="value"></span>
+                            <div class="label">Months</div>
+                        </div>
+                        <div id="w" class="unit">
+                            <span class="value"></span>
+                            <div class="label">Weeks</div>
+                        </div>
+                        <div id="d" class="unit">
+                            <span class="value"></span>
+                            <div class="label">Days</div>
+                        </div>
+                        <div id="h" class="unit">
+                            <span class="value"></span>
+                            <div class="label">Hours</div>
+                        </div>
+                        <div id="m" class="unit">
+                            <span class="value"></span>
+                            <div class="label">Minutes</div>
+                        </div>
+                        <div id="s" class="unit">
+                            <span class="value"></span>
+                            <div class="label">Seconds</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer">
+                Made with 😡 by
+                <a href="https://twitter.com/JakeBathman" target="_blank">
+                    JakeBathman
+                </a>
+            </div>
+        </div>
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="/js/moment.min.js"></script>
+    <script src="/js/countdown.min.js"></script>
+    <script src="/js/moment-countdown.min.js"></script>
+    <script src="/js/source.js?v=3"></script>
+</html>
