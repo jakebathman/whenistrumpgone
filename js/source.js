@@ -9,7 +9,7 @@ $(document).ready(function () {
 var timeout;
 
 function updateCountdown() {
-    var trumpIsGone = Math.round((1611162000000 - Date.now()) / 1000) <= 0;
+    var trumpIsGone = Math.round((1863622800000 - Date.now()) / 1000) <= 0;
 
     if (trumpIsGone) {
         clearTimeout(timeout);
