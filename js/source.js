@@ -1,6 +1,6 @@
 $(document).ready(function () {
     // Get the next inauguration moment (Epoch set at noon on 01/20/2021 in D.C.)
-    mGone = moment.unix('1611162000');
+    mGone = moment.unix('1863622800');
 
     // Update the countdown string
     updateCountdown();
